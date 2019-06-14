@@ -10,5 +10,5 @@ package zombiewar;
  * @author Mike: nelsonm25@csp.edu
  */
 public interface ICharacterFactory {
-    public ICharacter createCharacter(String type, int... args);
+    public ICharacter createCharacter(String type);
 }
