@@ -17,14 +17,19 @@ public interface ICharacter {
     public int getHealth();
     /**
      * Sets health of current character
-     * @param hp 
+     * @param health 
      */    
-    public void setHealth(int hp);
+    public void setHealth(int health);
     /**
      * Returns damage amount to deal to enemy
      * @return current character's attackDamage
      */
-    public int getAttackDamage();
+    public int getDamage();
+    /**
+     * Sets attack damage of current character
+     * @param damage 
+     */
+    public void setDamage(int damage);
     /**
      * Returns name of current character
      * @return String of current character's name
