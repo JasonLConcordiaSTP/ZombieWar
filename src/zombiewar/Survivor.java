@@ -7,35 +7,34 @@ package zombiewar;
 
 /**
  *
- * @author vishalbarot
+ * @author mausherm
  */
 
-public class Survivor implements ICharacter {
+public abstract class Survivor {
+     private int health;
+     private int damage;
+     private String name;
 
-    @Override
-    public int getHealth() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+     public Survivor() {
 
-    @Override
-    public void setHealth(int hp) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+     }
 
-    @Override
-    public int getAttackDamage() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setAttackDamage(int ap) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-}
-
+     public int getHealth() {
+         return health;
+     }
+     public void setHealth(int health) {
+         this.health = health;
+     }
+     public int getDamage() {
+         return damage;
+     }
+     public void setDamage(int damage) {
+         this.damage = damage;
+     }
+     public String getName() {
+         return name;
+     }
+     public void setName(String name) {
+         this.name = name;
+     }
+ }
