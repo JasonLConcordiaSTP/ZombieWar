@@ -36,3 +36,4 @@ public interface ICharacter {
      */
     public String getName();
 }
+

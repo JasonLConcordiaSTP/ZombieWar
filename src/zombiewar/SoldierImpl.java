@@ -5,12 +5,8 @@
  */
 package zombiewar;
 
-/**
- *
- * @author vishalbarot
- */
 
-public class Survivor implements ICharacter {
+public class SoldierImpl extends Soldier {
 
     @Override
     public int getHealth() {
@@ -37,5 +33,5 @@ public class Survivor implements ICharacter {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
+   
 }
-

@@ -20,6 +20,10 @@ public class ZombieWar {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+
+
+        
+
         
         List<Survivor> survivorList = new ArrayList<>();
         List<Zombie> zombieList = new ArrayList<>();
@@ -91,6 +95,23 @@ public class ZombieWar {
     
     // TODO: Move these classes to object factory code
 
+  
+        ICharacter Soldier = new Survivor();
+        Soldier.getName();
+        Soldier.setHealth(100);
+        Soldier.setAttackDamage(10);
+        
+        ICharacter Teacher = new Survivor();
+        Teacher.getName();
+        Teacher.setHealth(50);
+        Teacher.setAttackDamage(5);
+        
+        ICharacter Child = new Survivor();
+        Child.getName();
+        Child.setHealth(20);
+        Child.setAttackDamage(2);
+  
+/*  
     private static Zombie createZombie() {
         Random rand = new Random();
         int characterType = rand.nextInt(2);
@@ -114,7 +135,7 @@ public class ZombieWar {
                 return new Soldier();
         }
     }
-    
+  */  
     
     
 }
