@@ -7,10 +7,9 @@ package zombiewar;
 
 /**
  *
- * @author PCV
+ * @author vishalbarot
  */
 public class Child extends Survivor {
-
     public static int count = 0;
     
     public Child() {
@@ -19,7 +18,4 @@ public class Child extends Survivor {
         setDamage(2);
     }
 
-    Child() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

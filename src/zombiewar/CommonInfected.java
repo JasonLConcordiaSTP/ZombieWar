@@ -7,10 +7,9 @@ package zombiewar;
 
 /**
  *
- * @author PCV
+ * @author vishalbarot
  */
-public class CommonInfected {
-
+public class CommonInfected extends Zombie {
     public static int count = 0;
     
     public CommonInfected() {
@@ -18,4 +17,5 @@ public class CommonInfected {
         setHealth(30);
         setDamage(5);
     }
+    
 }
