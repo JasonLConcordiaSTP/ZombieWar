@@ -18,4 +18,8 @@ public class Child extends Survivor {
         setHealth(20);
         setDamage(2);
     }
+
+    Child() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

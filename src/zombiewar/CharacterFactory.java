@@ -7,7 +7,7 @@ package zombiewar;
 
 /**
  *
- * @author LUNDQJA
+ * @author mausherm
  */
 public class CharacterFactory implements ICharacterFactory{
   
@@ -21,8 +21,8 @@ public class CharacterFactory implements ICharacterFactory{
   //@Override
   public ICharacter createCharacter(String createType) {
     switch(createType){
-      //case "child"    		: return new Child();
-      //case "student"          	: return new Student();
+      case "child"    		: return (ICharacter) new Child();
+      
       case "teacher"          	: return (ICharacter) new Teacher();
       case "soldier"  		: return (ICharacter) new Soldier();
       case "commonInfected"   	: return (ICharacter) new CommonInfected();
