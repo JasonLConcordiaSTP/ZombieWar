@@ -18,7 +18,7 @@ public class CharacterFactory implements ICharacterFactory{
   }
 
   
-  //@Override
+  @Override
   public ICharacter createCharacter(String createType) {
     switch(createType){
       case "child"    		: return (ICharacter) new Child();
