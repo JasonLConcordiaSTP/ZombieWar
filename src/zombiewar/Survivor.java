@@ -9,6 +9,7 @@ package zombiewar;
  *
  * @author vishalbarot
  */
+
 public class Survivor implements ICharacter {
 
     @Override
@@ -37,3 +38,4 @@ public class Survivor implements ICharacter {
     }
     
 }
+
