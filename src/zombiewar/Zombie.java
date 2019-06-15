@@ -7,7 +7,7 @@ package zombiewar;
 
 /**
  *
- * @author vishalbarot
+ * @author mausherm
  */
 
 public abstract class Zombie {
@@ -38,3 +38,5 @@ public abstract class Zombie {
         this.name = name;
     }
 }
+    
+  
