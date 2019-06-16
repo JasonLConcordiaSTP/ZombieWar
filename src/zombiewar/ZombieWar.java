@@ -41,9 +41,12 @@ public class ZombieWar {
         }
         
         //Console output
-        System.out.println("We have " + survivorList.size() + " survivors trying to make it to safety.");
-        System.out.println("But there are " + zombieList.size() + " zombies waiting for them.");
+        System.out.println("We have " + survivorList.size() + " survivors trying to make it to safety "
+                + "(" + Child.count + " children, " + Teacher.count + " teachers, " + Soldier.count + " soldiers)");        
         
+        System.out.println("But there are " + zombieList.size() + " zombies waiting for them "
+                + "(" + CommonInfected.count + " common infected, " + Tank.count + " tanks)");
+       
         // Contiue when survivors and zombies exist.
         while((zombieList.size() > 0) && (survivorList.size() > 0)) {
        
@@ -56,6 +59,9 @@ public class ZombieWar {
                     zombieList.get(i).setHealth(zombieList.get(i).getHealth() - damage);
 
                     if (zombieList.get(i).getHealth() <= 0) {
+                        
+                        System.out.println(survivor.getName() + " killed " + zombieList.get(i).getName());
+                        
                         zombieList.remove(i);
                     }
                     // check for zombie
@@ -72,6 +78,9 @@ public class ZombieWar {
                 for (int i = 0;i<survivorList.size();i++) {
                     survivorList.get(i).setHealth(survivorList.get(i).getHealth() - damage);
                     if (survivorList.get(i).getHealth() <= 0) {
+                        
+                        System.out.println(zombie.getName() + " killed " + survivorList.get(i).getName());
+                        
                         survivorList.remove(i);
                     }
                     // check for last survivor.
