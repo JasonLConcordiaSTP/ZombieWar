@@ -1,7 +1,7 @@
 /*
  * CSC422 - Summer 2019 
  * Zombie War Group Project
- * Authors: Mike Nelson, Myra Ausherman, Peter Vang, Vishal Barot.
+ * Authors: Mike Nelson, Myra Ausherman, Peter Vang, Vishal Barot, Jason Lundquist.
  * 
  */
 
