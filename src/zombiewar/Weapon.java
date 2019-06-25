@@ -6,12 +6,15 @@
  */
 package zombiewar;
 
+import java.util.Random;
+
 /**
  *
  * @author mike
  */
 public abstract class Weapon {
-    int damage, accuracy;
+    private int damage, accuracy;
+    String name;
     
     //default constructor
     Weapon() {
@@ -25,12 +28,33 @@ public abstract class Weapon {
     }
     
     //getters and setters for damage and accuracy
+    public String getName() {
+         return name;
+     }
+    public void setName(String Name) {
+         this.name = Name;
+     }
     public int getDamage() {
         return damage;
     }
     public void setDamage(int i) {
         this.damage = i;
     }
+    
+    
+    //use this method to calculate effective damage.
+    public int getWeaponDamage() {
+        Random rand = new Random();
+        
+         if(rand.nextInt(100) < getAccuracy()){  
+             return damage;
+         }
+         else{
+             return 0;
+         }
+     }
+    
+    
     public int getAccuracy() {
         return accuracy;
     }
