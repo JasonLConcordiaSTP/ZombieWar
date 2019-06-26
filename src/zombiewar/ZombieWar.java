@@ -52,11 +52,15 @@ public class ZombieWar {
        
             for (Survivor survivor : survivorList) {
                 // survivor attack
+                // 6/25/19 - added logic to add weapon damage.
                 int damage = survivor.getDamage();
+                int weaponDamage = survivor.getWeaponStats(true);
+                int weaponAccuracy = survivor.getWeaponStats(false);
                 
                 for (int i = 0;i<zombieList.size();i++) {
-                    
-                    zombieList.get(i).setHealth(zombieList.get(i).getHealth() - damage);
+                    Zombie z = zombieList.get(i);
+                    //changed Survivor's attack level to call attackDamage() calculation method
+                    z.setHealth(z.getHealth() - attackDamage(damage, weaponDamage, weaponAccuracy));
 
                     if (zombieList.get(i).getHealth() <= 0) {
                         
@@ -100,8 +104,7 @@ public class ZombieWar {
         
     }
     
-   //character factory classes
-    
+   //character factory classes    
     private static Zombie createZombie() {
         Random rand = new Random();
         int characterType = rand.nextInt(2);
@@ -124,6 +127,17 @@ public class ZombieWar {
             default:
                 return new Soldier();
         }
+    }
+    
+    //calculate attack's damage bonus based on Survivor's weapon accuracy-driven chance
+    private static int attackDamage(int base, int weapon, int acc) {
+        Random rand = new Random();
+         if(rand.nextInt(100) < acc) {  
+             return base + weapon;
+         }
+         else{
+             return base;
+         }
     }
     
 }
