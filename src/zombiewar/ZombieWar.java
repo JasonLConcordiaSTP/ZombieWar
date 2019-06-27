@@ -60,7 +60,7 @@ public class ZombieWar {
                 for (int i = 0;i<zombieList.size();i++) {
                     Zombie z = zombieList.get(i);
                     //changed Survivor's attack level to call attackDamage() calculation method
-                    z.setHealth(z.getHealth() - attackDamage(damage, weaponDamage, weaponAccuracy));
+                    z.setHealth(z.getHealth() - attackDamage(weaponDamage, weaponAccuracy));
 
                     if (zombieList.get(i).getHealth() <= 0) {
                         
@@ -130,13 +130,13 @@ public class ZombieWar {
     }
     
     //calculate attack's damage bonus based on Survivor's weapon accuracy-driven chance
-    private static int attackDamage(int base, int weapon, int acc) {
+    private static int attackDamage( int weapon, int acc) {
         Random rand = new Random();
          if(rand.nextInt(100) < acc) {  
-             return base + weapon;
+             return weapon;
          }
          else{
-             return base;
+             return 0;
          }
     }
     
