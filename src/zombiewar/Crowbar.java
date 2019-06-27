@@ -13,8 +13,8 @@ public class Crowbar extends Weapon {
     
      // FryingPan Constructor
     public Crowbar() {
-        this.accuracy = 85;
-        this.damage = 24;
+        this.accuracy = 80;
+        this.damage = 10;
     }
     
 }

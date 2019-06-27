@@ -13,8 +13,8 @@ public class FryingPan extends Weapon {
 
     // FryingPan Constructor
     public FryingPan() {
-        this.accuracy = 90;
-        this.damage = 15;
+        this.accuracy = 100;
+        this.damage = 150;
     }
 
 }
