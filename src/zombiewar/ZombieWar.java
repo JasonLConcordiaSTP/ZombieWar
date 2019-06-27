@@ -53,7 +53,7 @@ public class ZombieWar {
             for (Survivor survivor : survivorList) {
                 // survivor attack
                 // 6/25/19 - added logic to add weapon damage.
-                int damage = survivor.getDamage();
+//                int damage = survivor.getDamage();
                 int weaponDamage = survivor.getWeaponStats(true);
                 int weaponAccuracy = survivor.getWeaponStats(false);
                 
