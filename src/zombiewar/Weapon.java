@@ -13,7 +13,7 @@ package zombiewar;
  * @author mike
  */
 public abstract class Weapon {
-    private int damage, accuracy;
+    int damage, accuracy;
     
     //default constructor
     Weapon() {
