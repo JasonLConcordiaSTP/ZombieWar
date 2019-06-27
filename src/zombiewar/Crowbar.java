@@ -9,12 +9,12 @@ package zombiewar;
  *
  * @author PCV
  */
-public class FryingPan extends Weapon {
-
-    // FryingPan Constructor
-    public FryingPan() {
-        this.accuracy = 90;
-        this.damage = 15;
+public class Crowbar extends Weapon {
+    
+     // FryingPan Constructor
+    public Crowbar() {
+        this.accuracy = 85;
+        this.damage = 24;
     }
-
+    
 }
