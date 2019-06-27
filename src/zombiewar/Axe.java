@@ -12,8 +12,8 @@ package zombiewar;
 public class Axe extends Weapon {
     
     public Axe() {
-        this.accuracy = 66;
-        this.damage = 35;
+        this.accuracy = 50;
+        this.damage = 20;
     }
 }
 
