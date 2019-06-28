@@ -15,13 +15,11 @@ public abstract class Survivor {
     private int health;
     private int damage;
     private String name;
-    private Weapon weapon;
+    Weapon weapon;
 
-    Survivor() {
-    }
+    Survivor() { }
 
-    Survivor(int health, int damage, Weapon w) {
-    }
+    Survivor(int health, int damage, Weapon w) { }
 
     public int getHealth() {
         return health;
