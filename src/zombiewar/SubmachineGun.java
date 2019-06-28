@@ -14,5 +14,6 @@ public class SubmachineGun extends Weapon {
     public SubmachineGun() {
         this.accuracy = 50;
         this.damage = 120;
+        this.type = "SubmachineGun";
     }   
 }

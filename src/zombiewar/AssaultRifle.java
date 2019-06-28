@@ -15,6 +15,7 @@ public class AssaultRifle extends Weapon {
         
          this.accuracy = 90;
          this.damage = 100;
+         this.type = "AssaultRifle";
     }
     
 }

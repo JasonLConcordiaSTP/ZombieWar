@@ -15,6 +15,7 @@ public class Crowbar extends Weapon {
     public Crowbar() {
         this.accuracy = 80;
         this.damage = 10;
+        this.type = "Crowbar";
     }
     
 }

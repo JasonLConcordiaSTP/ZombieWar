@@ -14,6 +14,7 @@ public class Axe extends Weapon {
     public Axe() {
         this.accuracy = 50;
         this.damage = 20;
+        this.type = "Axe";
     }
 }
 

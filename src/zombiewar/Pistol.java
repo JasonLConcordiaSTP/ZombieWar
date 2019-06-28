@@ -14,6 +14,7 @@ public class Pistol extends Weapon {
     public Pistol() {
         this.accuracy = 35;
         this.damage = 40;
+        this.type = "Pistol";
     }
 }
 
