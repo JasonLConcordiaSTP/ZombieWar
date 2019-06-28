@@ -14,13 +14,12 @@ public class Shotgun extends Weapon {
     public Shotgun() {
         this.accuracy = 66;
         this.damage = 35;
-        this.type = "Shotgun";
     }
 }
 
 //class Main {
 //    public static void main(String[] args) {
 //        Shotgun moss = new Shotgun();
-//        System.out.println("A " + moss. has " + moss.getDamage() + " damage and " + moss.getAccuracy() + " accuracy.");
+//        System.out.println("A shotgun has " + moss.getDamage() + " damage and " + moss.getAccuracy() + " accuracy.");
 //    }
 //}
