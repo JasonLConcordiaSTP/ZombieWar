@@ -14,16 +14,19 @@ package zombiewar;
  */
 public abstract class Weapon {
     int damage, accuracy;
+    String type;
     
     //default constructor
     Weapon() {
         this.accuracy = 0;
         this.damage = 0;
+        this.type = "";
     }
     //parameterized constructor
     Weapon(int dmg, int acc) {
         this.accuracy = acc;
         this.damage = dmg;
+        this.type = type;
     }
     
     //getters and setters for damage and accuracy
@@ -40,5 +43,8 @@ public abstract class Weapon {
     }
     public void setAccuracy(int i) {
         this.accuracy = i;
+    }
+    public String getWeaponType() {
+        return type;
     }
 }

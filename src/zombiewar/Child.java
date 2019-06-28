@@ -13,10 +13,11 @@ package zombiewar;
 public class Child extends Survivor {
     public static int count = 0;
     
-    public Child() {
+    public Child(Weapon w) {
         setName("Child " + count++);
         setHealth(20);
         setDamage(2);
+        this.weapon = w;
     }
 
 }

@@ -14,10 +14,10 @@ package zombiewar;
 public class Soldier extends Survivor {
     public static int count = 0;
     
-    public Soldier (){
+    public Soldier (Weapon w){
         setName("Soldier " + count++);
         setHealth(100);
         setDamage(10);
+        this.weapon = w;
     }
-
 }
