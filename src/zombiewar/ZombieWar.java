@@ -63,13 +63,9 @@ public class ZombieWar {
                     z.setHealth(z.getHealth() - attackDamage(weaponDamage, weaponAccuracy));
 
                     if (zombieList.get(i).getHealth() <= 0) {
-                        // 6/27/19 - Added Weapon info to Kill Board
-                        //System.out.println(survivor.getName() + " killed " + zombieList.get(i).getName());
-                        System.out.println(
-                                survivor.getName() + " killed " + 
-                                zombieList.get(i).getName() + 
-                                " with a " + survivor.weapon.getWeaponType());
-
+                        
+                        System.out.println(survivor.getName() + " killed " + zombieList.get(i).getName());
+                        
                         zombieList.remove(i);
                     }
                     // check for zombie
@@ -123,39 +119,16 @@ public class ZombieWar {
     private static Survivor createSurvivor() {
         Random rand = new Random();
         int characterType = rand.nextInt(3);
-        // 6/27/19 - added Weapon functionality
-        Weapon w = createWeapon();
         switch (characterType) {
             case 0: 
-                return new Child(w);
+                return new Child();
             case 1:
-                return new Teacher(w);
+                return new Teacher();
             default:
-                return new Soldier(w);
+                return new Soldier();
         }
     }
     
-    //Weapons factory
-    private static Weapon createWeapon() {
-        Random rand = new Random();
-        int weaponType = rand.nextInt(7);
-        switch (weaponType) {
-            case 0: 
-                return new AssaultRifle();
-            case 1:
-                return new Axe();
-            case 2:
-                return new Crowbar();
-            case 3:
-                return new FryingPan();
-            case 4:
-                return new Pistol();
-            case 5:
-                return new Shotgun();
-            default:
-                return new SubmachineGun();
-        }
-    }    
     //calculate attack's damage bonus based on Survivor's weapon accuracy-driven chance
     private static int attackDamage( int weapon, int acc) {
         Random rand = new Random();
