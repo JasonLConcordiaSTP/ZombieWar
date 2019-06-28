@@ -2,8 +2,6 @@
  * CSC422 - Summer 2019 
  * Zombie War Group Project
  * Authors: Mike Nelson, Myra Ausherman, Peter Vang, Vishal Barot, Jason Lundquist.
- * 
- *
  */
 package zombiewar;
 
@@ -11,13 +9,12 @@ package zombiewar;
  *
  * @author PCV
  */
-public class Tank extends Zombie {
+public class FryingPan extends Weapon {
 
-    public static int count = 0;
-    
-    public Tank() {
-        setName("Tank " + count++);
-        setHealth(150);
-        setDamage(20);
+    // FryingPan Constructor
+    public FryingPan() {
+        this.accuracy = 100;
+        this.damage = 150;
     }
+
 }
