@@ -9,12 +9,10 @@ package zombiewar;
  *
  * @author vishalbarot
  */
-public class AssaultRifle extends Weapon {
+public class SubmachineGun extends Weapon {
     
-    public AssaultRifle (){
-        
-         this.accuracy = 90;
-         this.damage = 100;
-    }
-    
+    public SubmachineGun() {
+        this.accuracy = 50;
+        this.damage = 120;
+    }   
 }
